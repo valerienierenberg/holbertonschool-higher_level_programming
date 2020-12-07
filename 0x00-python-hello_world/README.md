@@ -8,5 +8,9 @@
 7-edges.py - Completed provided source code
 8-concat_edges.py - Completed provided source code to print object-oriented programming with Python, followed by a new line.
 9-easter_egg.py - Python script that prints “The Zen of Python”, by TimPeters, followed by a new line.
-10-check_cycle.c - Write a function in C that checks if a singly linked list has a cycle in it.
+10-check_cycle.c - Function in C that checks if a singly linked list has a cycle in it.
+100-write.py - Python script that prints exactly and that piece of art is useful - Dora Korpar, 2015-10-19, followed by a new line.
+101-compile - Script that compiles a Python script file. The Python file name will be stored in the environment variable $PYFILE
+102-magic_calculation.py - Python function def magic_calculation(a, b): does exaclty the same thing as given example in project task.
+
 lists.h - header file containing necessary C prototypes
