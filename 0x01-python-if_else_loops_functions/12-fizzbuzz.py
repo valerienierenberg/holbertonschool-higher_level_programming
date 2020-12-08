@@ -8,4 +8,4 @@ def fizzbuzz():
         elif n % 3 == 0 and n % 5 == 0:
             print("FizzBuzz", end=" ")
         else:
-            print("{}".format(n), end=" ")  # for numbers not divis. by 3 or 5
+            print("{}".format(n), end=" ")
