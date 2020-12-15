@@ -6,11 +6,8 @@ def new_in_list(my_list, idx, element):
     if not my_list:
         return
 
-    my_list2 = my_list.copy()
+    my_list2 = my_list[:]
 
-    for x in range(len(my_list2)):
-        if idx < 0 or idx > len(my_list2):
-            return (my_list2)
-        elif x == idx:
-            my_list2[x] = element
-            return (my_list2)
+    if idx >= 0 and idx < len(my_list2):
+        my_list2[idx] = element
+    return (my_list2)
