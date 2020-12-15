@@ -3,6 +3,9 @@
 
 def new_in_list(my_list, idx, element):
 
+    if not my_list:
+        return
+
     my_list2 = my_list.copy()
 
     for x in range(len(my_list2)):
