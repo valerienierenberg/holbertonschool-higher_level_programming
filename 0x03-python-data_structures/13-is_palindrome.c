@@ -30,7 +30,7 @@ int pal_meat(listint_t **left, listint_t *right)
 {
 if (!right)
 	return (1);
-if (pal_meat(left, right->next && (*left)->n == right->next))
+if (pal_meat(left, right->next && (*left)->n == right->n))
 {
 	*left = (*left)->next;
 	return (1);
