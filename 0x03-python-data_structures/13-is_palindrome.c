@@ -14,7 +14,7 @@ int is_palindrome(listint_t **head)
 {
 if (!*head)
 	return (1);
-	return (pal_help(head, *head));
+	return (pal_meat(head, *head));
 }
 
 
@@ -30,7 +30,7 @@ int pal_meat(listint_t **left, listint_t *right)
 {
 if (!right)
 	return (1);
-if (pal_meat(left, right->next && (*left)->n == right->n))
+if (pal_meat(left, right->next) && (*left)->n == right->n)
 {
 	*left = (*left)->next;
 	return (1);
