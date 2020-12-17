@@ -5,6 +5,8 @@ def uniq_add(my_list=[]):
 
     return (sum(set(my_list)))
 
+# *** set cannot contain duplicate values ***
+
 #    newlist = my_list[:]
 #    total = 0
 
