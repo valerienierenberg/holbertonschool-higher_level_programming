@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 
-## 20:56 
 
 def square_matrix_simple(matrix=[]):
+    if matrix:
+        return [list(map(lambda x: x**2, x)) for x in matrix]
 
-    newmatrix = matrix[:]
+# newmatrix = matrix[:]
 
-    for x in newmatrix:
-        b = [y*y for y in x]
-
-    return b
+# for x in newmatrix:
+# newmatrix = [y*y for y in x]
+# return newmatrix
