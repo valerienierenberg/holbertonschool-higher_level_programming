@@ -3,7 +3,7 @@
 
 def best_score(a_dictionary):
 
-    if not a_dictionary:
-        return
-    else: None
-    return (max(a_dictionary))
+    if a_dictionary:
+        return (max(a_dictionary))
+    else:
+        None
