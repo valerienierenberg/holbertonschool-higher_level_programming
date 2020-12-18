@@ -6,8 +6,8 @@ def roman_to_int(roman_string):
     rom_val = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
     int_val = 0
 
-    if roman_string is None:
-        return
+    if roman_string is None or not rom_val:
+        return 0
 
     for i in range(len(s)):
         if i > 0 and rom_val[s[i]] > rom_val[s[i - 1]]:
