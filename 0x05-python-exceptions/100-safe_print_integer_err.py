@@ -10,5 +10,7 @@ def safe_print_integer_err(value):
         print("Exception: {}".format(ex), file=sys.stderr)
         return False
 
-# funciton that prints an integer.
-#
+# Function that prints an integer.
+# import sys module in order to print to stderr file
+# try: print the value and return True
+# except: if it is not an integer, print error argument to stderr, return False
