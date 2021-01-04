@@ -19,4 +19,9 @@ def list_division(my_list_1, my_list_2, list_length):
     return (my_list_3)
 
 # make an empty list called 'my_list_3'
-#
+# for loop iterates through length of lists
+# try: append the result of division of corresponding elements of lists...
+# ...to the new list my_list_3
+# for all excepts: append 0 to new list because division was unsuccessful
+# (as specified in task requirements)
+# return new list
