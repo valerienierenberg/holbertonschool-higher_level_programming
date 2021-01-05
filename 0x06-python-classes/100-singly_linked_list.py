@@ -1,4 +1,7 @@
-#!usr/bin/python3
+#!/usr/bin/python3
+""" This module contains a class Node """
+
+
 class Node:
     """ Node class """
     def __init__(self, data, next_node=None):
@@ -11,6 +14,10 @@ class Node:
 
     @property
     def data(self):
+        """ getter for __data
+        Returns:
+            data of node
+        """
         return self.__data
 
     @data.setter
@@ -28,6 +35,10 @@ class Node:
 
     @property
     def next_node(self):
+        """ getter for __next_node
+        Returns:
+            next node
+        """
         return self.__next_node
 
     @next_node.setter
