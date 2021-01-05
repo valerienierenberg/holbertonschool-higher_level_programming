@@ -1,5 +1,5 @@
 #!usr/bin/python3
-""" Docstring for 0x06-python-classes """
+""" Doc string defiing a class Square """
 
 
 class Square:
