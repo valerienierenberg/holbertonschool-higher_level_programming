@@ -5,6 +5,7 @@ class Square:
         """ __init method
         Args:
             size: integer
+            position: tuple of integers
         """
         self.__size = size
         self.__position = position
@@ -37,7 +38,7 @@ class Square:
     def position(self, value):
         """ property setter 'position'
         Args:
-            value: integer
+            value: tuple of integers
         Raises:
             TypeError: if tuple is not two positive ints
         """
