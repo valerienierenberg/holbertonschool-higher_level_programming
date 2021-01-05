@@ -1,6 +1,13 @@
-#!usr/bin/python3
+#!/usr/bin/python3
+""" This module contains a class Square """
+
+
 class Square:
-    """ Square class """
+    """ Square class - represents a square
+
+    Attributes:
+        __size: integer, size of a side of square
+    """
     def __init__(self, size=0):
         """ __init method
         Args:
@@ -10,6 +17,10 @@ class Square:
 
     @property
     def size(self):
+        """ getter for __size
+        Returns:
+            size of square
+        """
         return self.__size
 
     @size.setter
@@ -20,6 +31,8 @@ class Square:
         Raises:
             TypeError: if size is not an int
             ValueError: if size is < 0
+        Returns:
+            None
         """
         if type(value) is not int:
             raise TypeError('size must be an integer')
