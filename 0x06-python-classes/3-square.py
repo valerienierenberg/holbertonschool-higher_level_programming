@@ -1,6 +1,13 @@
-#!usr/bin/python3
+#!/usr/bin/python3
+""" This module contains a class Square """
+
+
 class Square:
-    """ Square class """
+    """ Square class - represents a square
+
+    Attributes:
+        __size: integer, size of a side of square
+    """
     def __init__(self, size=0):
         """ __init method
         Args:
