@@ -6,12 +6,18 @@ class Square:
         Args:
             size: integer
             position: tuple of integers
+        Returns:
+            None
         """
         self.__size = size
         self.__position = position
 
     @property
     def size(self):
+        """ getter for __size
+        Returns:
+            size of square
+        """
         return self.__size
 
     @size.setter
@@ -22,6 +28,8 @@ class Square:
         Raises:
             TypeError: if size is not an int
             ValueError: if size is < 0
+        Returns:
+            None
         """
         if type(value) is not int:
             raise TypeError('size must be an integer')
@@ -32,6 +40,10 @@ class Square:
 
     @property
     def position(self):
+        """ getter for __position
+        Returns:
+            position of square
+        """
         return self.__position
 
     @position.setter
