@@ -1,10 +1,8 @@
 #!usr/bin/python3
 """ This module contains an empty class to practice class
-declarations and definitons
-"""
+declarations and definitons """
 
 
 class Square:
-    """ This is an empty class.
-    """
+    """ This is an empty class. """
     pass
