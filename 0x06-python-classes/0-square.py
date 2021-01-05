@@ -1,5 +1,5 @@
 #!usr/bin/python3
-""" Doc string defiing a class Square """
+""" Doc string defining a class Square """
 
 
 class Square:
