@@ -80,7 +80,7 @@ class Square:
         Description:
             prints in stdout the square with the character #
         """
-        if self.size == 0 or self.position[1] > 0:
+        if self.size == 0:
             print()
         for x in range(self.size):
             print("{}{}".format(' ' * self.position[0], '#' * self.size))
