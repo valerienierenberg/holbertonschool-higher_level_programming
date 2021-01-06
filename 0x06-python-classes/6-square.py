@@ -82,5 +82,6 @@ class Square:
         """
         if self.size == 0 or self.position[1] > 0:
             print()
+            return
         for x in range(self.size):
             print("{}{}".format(' ' * self.position[0], '#' * self.size))
