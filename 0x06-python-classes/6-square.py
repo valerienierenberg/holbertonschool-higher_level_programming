@@ -12,8 +12,8 @@ class Square:
         Returns:
             None
         """
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
@@ -57,7 +57,7 @@ class Square:
         Raises:
             TypeError: if tuple is not two positive ints
         """
-        if len(value) == 1 or type(value) != tuple or type(value[0]) is not \
+        if len(value) != 2 or type(value) != tuple or type(value[0]) is not \
                 int or type(value[1]) is not int or value[0] < 0 \
                 or value[1] < 0 or value[0] is None or value[1] is None:
             raise TypeError('position must be a tuple of 2 positive integers')
