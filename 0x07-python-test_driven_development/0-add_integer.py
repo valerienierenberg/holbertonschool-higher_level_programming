@@ -9,7 +9,7 @@ def add_integer(a, b=98):
         Raises:
             TypeError: if a or b is not an int
         Returns:
-            integer; the sum of a and b
+            integer - the sum of a and b
         """
         if type(a) is float or type(b) is float:
             a = int(a)
