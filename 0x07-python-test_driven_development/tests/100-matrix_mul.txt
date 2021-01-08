@@ -1,0 +1,28 @@
+"""
+>>> matrix_mul = __import__('100-matrix_mul').matrix_mul
+
+>>> print(matrix_mul("hi", [[1, 2], [3, 4]]))
+Traceback (most recent call last):
+...
+TypeError: m_a must be a list
+
+
+>>> print(matrix_mul([[1, 2], [3, 4]], "hi"))
+Traceback (most recent call last):
+...
+TypeError: m_b must be a list
+
+
+>>> print(matrix_mul([[]], [[1, 2], [3, 4]]))
+Traceback (most recent call last):
+...
+ValueError: m_a can't be empty
+
+
+>>> print(matrix_mul([[1, 2], [3, 4]], [[]]))
+Traceback (most recent call last):
+...
+ValueError: m_b can't be empty
+
+
+"""
