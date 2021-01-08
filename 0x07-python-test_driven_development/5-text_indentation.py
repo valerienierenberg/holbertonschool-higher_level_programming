@@ -13,13 +13,20 @@ def text_indentation(text):
         None
     """
 
-    chars = ".?:"
-
     if type(text) is not str:
         raise TypeError("text must be a string")
-    else:
-        for c in text:
-            print(c, end="")
-            if c in chars:
-                print()
-                print()
+    c = text.replace('.', '.\n\n')
+    c = c.replace(':', ':\n\n')
+    c = c.replace('?', '?\n\n')
+    c = c.replace('\n ', '\n')
+    print(c, end="")
+
+#    else:
+#        for c in text:
+#            print(c, end="")
+#            if c in chars:
+#                print()
+#                print()
+#            if c == ' ':
+#                c.replace(' ', '')
+#               c.replace(' ', '')
