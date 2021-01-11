@@ -90,6 +90,10 @@ class Rectangle:
         return (self.__width * 2) + (self.__height * 2)
 
     def __str__(self):
+        """ __str method:
+        Args: self
+        Return: rectangle printed with "#"
+        """
         if self.__width == 0 or self.__height == 0:
             print(" ")
         output = ""
