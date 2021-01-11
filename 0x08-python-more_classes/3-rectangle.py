@@ -95,7 +95,7 @@ class Rectangle:
         Return: rectangle printed with "#"
         """
         if self.__width == 0 or self.__height == 0:
-            print(" ")
+            return ""
         output = ""
         for x in range(self.height):
             for y in range(self.width):
