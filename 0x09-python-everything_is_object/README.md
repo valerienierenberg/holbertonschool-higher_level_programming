@@ -129,12 +129,11 @@ print(new_list)
 print(new_list == my_list)
 print(new_list is my_list)
 ```
-20-answer.txt - a = () - Is a a tuple?
-21-answer.txt - a = (1, 2) - Is a a tuple?
-22-answer.txt - a = (1) - Is a a tuple?
-23-answer.txt - a = (1, ) - Is a a tuple?
-24-answer.txt - What does this script print?
-
+20-answer.txt - a = () - Is a a tuple?\
+21-answer.txt - a = (1, 2) - Is a a tuple?\
+22-answer.txt - a = (1) - Is a a tuple?\
+23-answer.txt - a = (1, ) - Is a a tuple?\
+24-answer.txt - What does this script print?\
 25-answer.txt - What does this script print?
 ```
 a = (1, 2)
