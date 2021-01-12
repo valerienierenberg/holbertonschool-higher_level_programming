@@ -14,8 +14,8 @@ class Rectangle:
         Args:
             size: integer
         """
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
@@ -23,7 +23,7 @@ class Rectangle:
         Returns:
             width of square
         """
-        return self.width
+        return self.__width
 
     @width.setter
     def width(self, value):
@@ -49,7 +49,7 @@ class Rectangle:
         Returns:
             height of square
         """
-        return self.height
+        return self.__height
 
     @height.setter
     def height(self, value):
