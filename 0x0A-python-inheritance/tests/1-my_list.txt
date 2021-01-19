@@ -1,0 +1,49 @@
+"""
+>>> MyList = __import__('1-my_list').MyList
+
+
+>>> type(MyList())
+<class '1-my_list.MyList'>
+
+
+
+>>> issubclass(MyList, list)
+True
+
+
+
+>>> newlist = MyList()
+>>> newlist.print_sorted()
+[]
+
+
+>>> my_list = MyList()
+>>> my_list.append(-1)
+>>> my_list.append(2)
+>>> my_list.append(0)
+>>> my_list.append(204.3)
+>>> my_list.print_sorted()
+[-1, 0, 2, 204.3]
+
+
+
+>>> my_list = MyList()
+>>> my_list.append(-1)
+>>> my_list.append("string")
+>>> my_list.append(0)
+>>> my_list.append(204.3)
+>>> my_list.print_sorted()
+Traceback (most recent call last):
+...
+TypeError: unorderable types: str() < int()
+
+
+
+>>> my_list = None
+>>> my_list.print_sorted()
+Traceback (most recent call last):
+...
+AttributeError: 'NoneType' object has no attribute 'print_sorted'
+
+
+"""
