@@ -11,6 +11,6 @@ README.md for project 0x0A-python-inheritance
 8-rectangle.py - class BaseGeometry (based on 7-base_geometry.py) that incorporates instantiation with width and height: def __init__(self, width, height)\
 9-rectangle.py - class Rectangle that inherits from BaseGeometry (7-base_geometry.py). (task based on 8-rectangle.py)\
 10-square.py - class Square that inherits from Rectangle (9-rectangle.py). area() method is implemented.\
-11-square.py - class Square that inherits from Rectangle (9-rectangle.py). (task based on 10-square.py). print() prints, and str() returns, the square description: [Square] <width>/<height>\
+11-square.py - class Square that inherits from Rectangle (9-rectangle.py). (task based on 10-square.py). print() prints, and str() returns, the square description: [Square] <width> divided by <height>\
 100-my_int.py - class MyInt that inherits from int, but with the == and != operators inverted.\
 101-add_attribute.py - function that adds a new attribute to an object if it’s possible. TypeError exception is raised with the message “can’t add new attribute” if the object can’t have a new attribute.
