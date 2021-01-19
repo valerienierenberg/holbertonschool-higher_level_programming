@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """ This module contains a class Square that inherits from
     Rectangle. It contains instantiation with 'size' The area method is
-    implemented to return the area of the square """
+    implemented to return the area of the square. str format now
+    prints 'Square' instead of 'Rectangle' """
 
 
 Rectangle = __import__('9-rectangle').Rectangle
