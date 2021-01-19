@@ -23,7 +23,7 @@ class Rectangle(BaseGeometry):
 
     def area(self):
         """ area method:
-            Attributes: width (int), height (int)
+            Attributes: self
             Returns: area of rectangle
         """
         return self.__width * self.__height
