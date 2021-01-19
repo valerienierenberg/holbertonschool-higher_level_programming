@@ -1,0 +1,80 @@
+"""
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("my_int", 12)
+
+
+>>> bg.integer_validator("width", 89)
+
+
+>>> bg.integer_validator("blob", 0)
+Traceback (most recent call last):
+...
+ValueError: blob must be greater than 0
+
+
+>>> bg.integer_validator("negtry", -3.4)
+Traceback (most recent call last):
+...
+TypeError: negtry must be an integer
+
+
+>>> bg.integer_validator("negtry", -3)
+Traceback (most recent call last):
+...
+ValueError: negtry must be greater than 0
+
+
+>>> bg.integer_validator("stringtry", "string")
+Traceback (most recent call last):
+...
+TypeError: stringtry must be an integer
+
+
+>>> bg.integer_validator("tupletry", (21, 123))
+Traceback (most recent call last):
+...
+TypeError: tupletry must be an integer
+
+
+>>> bg.integer_validator("dicttry", {"key": "value"})
+Traceback (most recent call last):
+...
+TypeError: dicttry must be an integer
+
+
+>>> bg.integer_validator("blob", -58697452)
+Traceback (most recent call last):
+...
+ValueError: blob must be greater than 0
+
+
+>>> bg.integer_validator("blob", 3.69)
+Traceback (most recent call last):
+...
+TypeError: blob must be an integer
+
+
+>>> bg.integer_validator("onearg")
+Traceback (most recent call last):
+...
+TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+
+>>> bg.integer_validator()
+Traceback (most recent call last):
+...
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+
+>>> bg.integer_validator("blob", None)
+Traceback (most recent call last):
+...
+TypeError: blob must be an integer
+
+
+>>> bg.integer_validator("", 1)
+
+"""
