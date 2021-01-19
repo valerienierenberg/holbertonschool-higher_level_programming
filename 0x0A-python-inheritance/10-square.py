@@ -30,3 +30,16 @@ class Square(Rectangle):
             Attributes: self
         """
         return ("[Rectangle] {}/{}".format(self.__size, self.__size))
+
+
+#  or this could be it:
+#
+#
+#  def __init__(self, size):
+#     """ init method:
+#        Attributes: self, size (int)
+#        Returns: None
+#    """
+#     super().integer_validator("size", size)
+#     super(Square, self).__init__(size, size)
+#     self.__size = size
