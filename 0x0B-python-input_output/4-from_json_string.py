@@ -8,7 +8,7 @@ import json
 
 
 def from_json_string(my_str):
-    """ to_json string function:
+    """ from_json_string function:
         Args: my_str - JSON string
         Return: object represented by a JSON string
     """
