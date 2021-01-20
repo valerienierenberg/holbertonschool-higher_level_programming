@@ -7,7 +7,7 @@ def write_file(filename="", text=""):
     """ write_file function:
         Args: filename - string
               text = text to write in the file (string)
-        Return: None
+        Return: contents written to file
     """
     with open(filename, mode='r+', encoding='utf-8') as a_file:
             return(a_file.write(text))
