@@ -31,6 +31,16 @@ class Student():
         return ({key: value for key, value in self.__dict__.items()
                 if key in attrs})
 
+#  another way (after the if statement)
+#
+#  myDict = {}
+#  for x in self.__dict__:
+#       for y in attrs:
+#           if x is y:
+#               myDict[x] = self.__dict__[x]
+#   return myDict
+
+
 # (close but no)
 #       for (key, value) in self.__dict__.items():
 #            if key in attrs:
