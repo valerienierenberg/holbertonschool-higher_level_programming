@@ -95,5 +95,9 @@ Traceback (most recent call last):
 ...
 SyntaxError: invalid character in identifier
 
+>>> bg.area()
+Traceback (most recent call last):
+...
+Exception: area() is not implemented
 
 """
