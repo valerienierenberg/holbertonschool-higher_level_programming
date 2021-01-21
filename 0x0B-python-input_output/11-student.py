@@ -41,3 +41,6 @@ class Student():
             None
         """
         self.__dict__.update(json)
+
+#  for x in json:
+#    self.__dict__[x] = json[x]
