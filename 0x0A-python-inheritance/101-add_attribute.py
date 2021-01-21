@@ -2,6 +2,7 @@
 """ This module contains a function that
     adds a new attribute to an object if it’s possible """
 
+
 def add_attribute(obj, name, value):
     """ is_same_class method:
         args: obj - object to create new attribute for
