@@ -5,8 +5,10 @@
 
 class MyInt(int):
     """ MyInt class """
-    def new():
-        if (MyInt.__and):
-            return False
-        if (MyInt.__ne):
-            return True
+    def __eq__(self, other):
+        """ returns the opposite of equal """
+        return super().__ne__(other)
+
+    def __ne__(self, other):
+        """ returns the opposite of not equal """
+        return super().__eq__(other)
