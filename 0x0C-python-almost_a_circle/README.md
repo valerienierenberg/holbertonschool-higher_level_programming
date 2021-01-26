@@ -35,11 +35,11 @@ Unittesting can be done with the following command:
     - square.py
 
 ###### tests/
+###### test_models/
 * contains the following files:
-    - test_models/
-        - test_base.py
-        - test_rectangle.py
-        - test_square.py
+    - test_base.py
+    - test_rectangle.py
+    - test_square.py
 
 
 ## File Descriptions:
