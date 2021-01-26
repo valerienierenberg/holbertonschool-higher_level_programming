@@ -1,6 +1,6 @@
-# Project 0x0C-python-almost_a_circle
+# 0x0C-python-almost_a_circle
 
-## Description:
+## Project Description:
 
 This project is a culmination of everything we have learned about Python thus far, including:
 
@@ -26,7 +26,7 @@ All files, classes and methods are unit tested and be PEP 8 validated.
 Unittesting can be done with the following command:
 `python3 -m unittest discover tests`
 
-## File organization:
+## File Organization:
 
 ###### models/
 * contains the following files:
@@ -42,7 +42,7 @@ Unittesting can be done with the following command:
         - test_square.py
 
 
-## File descriptions:
+## File Descriptions:
 * base.py - module that contains the class Base with the following methods and attributes:
     - private class attribute __nb_objects, initialized to = 0
     - __init__() - class constructor, with attribute id
