@@ -34,8 +34,7 @@ Unittesting can be done with the following command:
     - rectangle.py
     - square.py
 
-###### tests/
-###### test_models/
+###### tests/test_models/
 * contains the following files:
     - test_base.py
     - test_rectangle.py
