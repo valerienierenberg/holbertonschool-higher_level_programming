@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Unittest for Rectangle class and all its methods
+"""Unittest for Square class and all its methods
 """
 import unittest
 import pep8
