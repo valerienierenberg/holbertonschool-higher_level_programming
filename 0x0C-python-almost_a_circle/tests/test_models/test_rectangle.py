@@ -128,7 +128,7 @@ class TestRectangle(unittest.TestCase):
         """
         with self.assertRaises(TypeError):
             rect1 = Rectangle()
-            self.r.area(1)
+            self.rect1.area(1)
 
     def test_rect_TypeError_width(self):
         """
