@@ -202,8 +202,7 @@ class TestSquare(unittest.TestCase):
         Base._Base__nb_objects = 0
         sq1 = Square(10, 10, 10)
         sq1.update(size=1)
-        stringrep = str(sq1)
-        self.assertEqual(stringrep, "[Square] (1) 10/10 - 1")
+        self.assertEqual(sq1.__str__(), "[Square] (1) 10/10 - 1")
 
 if __name__ == '__main__':
     unittest.main()

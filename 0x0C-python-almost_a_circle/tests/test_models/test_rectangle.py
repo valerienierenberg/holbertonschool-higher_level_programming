@@ -237,8 +237,7 @@ class TestRectangle(unittest.TestCase):
         Base._Base__nb_objects = 0
         r1 = Rectangle(10, 10, 10, 10)
         r1.update(height=1)
-        stringrep = str(r1)
-        self.assertEqual(stringrep, "[Rectangle] (1) 10/10 - 10/1")
+        self.assertEqual(r1.__str__(), "[Rectangle] (1) 10/10 - 10/1")
 
 if __name__ == '__main__':
     unittest.main()
