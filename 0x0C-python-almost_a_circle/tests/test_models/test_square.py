@@ -183,11 +183,9 @@ class TestSquare(unittest.TestCase):
         """
         Base._Base__nb_objects = 0
         sq1 = Square(2, 4, 2, 9)
-        stringrep = str(sq1)
-        self.assertEqual(stringrep, "[Square] (9) 4/2 - 2")
+        self.assertEqual(sq1.__str__(), "[Square] (9) 4/2 - 2")
         sq2 = Square(2, 4, 2)
-        stringrep2 = str(sq2)
-        self.assertEqual(stringrep2, "[Square] (1) 4/2 - 2")
+        self.assertEqual(sq2.__str__(), "[Square] (1) 4/2 - 2")
 
     def test_square_to_dictionary(self):
         """
