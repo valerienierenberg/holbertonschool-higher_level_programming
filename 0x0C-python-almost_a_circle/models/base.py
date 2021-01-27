@@ -73,7 +73,7 @@ class Base:
             list of the JSON string representation json_string
         """
         if json_string is None or json_string is "[]":
-            return "[]"
+            return []
         return (json.loads(json_string))
 
     @classmethod
