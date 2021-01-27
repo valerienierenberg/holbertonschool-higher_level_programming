@@ -37,9 +37,10 @@ class Base:
             Otherwise, returns the JSON string
             representation of list_dictionaries
         """
-        if list_dictionaries is None or len(list_dictionaries) is 0:
+        if list_dictionaries and len(list_dictionaries) is not 0:
+            return (json.dumps(list_dictionaries))
+        else:
             return "[]"
-        return (json.dumps(list_dictionaries))
 
     @classmethod
     def save_to_file(cls, list_objs):
