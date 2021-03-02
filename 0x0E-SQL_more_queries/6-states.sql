@@ -2,10 +2,3 @@
 -- (in the database hbtn_0d_usa) on your MySQL server.
 CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
 CREATE TABLE IF NOT EXISTS hbtn_0d_usa.states (id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, name VARCHAR(256) NOT NULL);
-
-/* states description:
-id INT unique, auto generated, can’t be null and is a primary key
-name VARCHAR(256) can’t be null
-If the database hbtn_0d_usa already exists, your script should not fail
-If the table states already exists, your script should not fail
-*/
