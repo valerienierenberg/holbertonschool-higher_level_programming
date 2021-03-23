@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-var myFuncCalls = -1;
+let myFuncCalls = -1;
 
 exports.logMe = function (item) {
   myFuncCalls++;
