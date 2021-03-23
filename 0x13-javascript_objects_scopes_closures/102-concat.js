@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-// cat *.txt >> all.txt
+// cat *.txt >> all.txt ...
 
 var concat = require('concat-files');
 const myArgs = process.argv.slice(2);
