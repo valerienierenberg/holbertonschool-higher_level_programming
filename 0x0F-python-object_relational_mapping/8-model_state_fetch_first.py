@@ -14,5 +14,10 @@ if __name__ == "__main__":
 
     session = Session(engine)
     for state in session.query(State).order_by(State.id).filter_by(id='1'):
-        print("{}: {}".format(state.id, state.name))
+        if state:
+            print("{}: {}".format(state.id, state.name))
+        else:
+            print("Nothing")
     session.close()
+
+#  could not clear table, so did not test if printing "Nothing" works. Should.
