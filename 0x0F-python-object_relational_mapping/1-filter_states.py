@@ -4,11 +4,11 @@
 if __name__ == "__main__":
     from sys import argv
     import MySQLdb
-    conn = MySQLdb.connect(host="localhost", port=3306, user=argv[1],
+    conn = MySQLdb.connect(user=argv[1],
                            passwd=argv[2], db=argv[3], charset="utf8")
     cur = conn.cursor()
     cur.execute("""SELECT * from states WHERE name like 'N%' ORDER BY
-                states.id ASC""")
+                states.id """)
     query_rows = cur.fetchall()
     for row in query_rows:
         print(row)
