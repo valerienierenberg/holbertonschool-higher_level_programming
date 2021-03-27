@@ -8,7 +8,7 @@ if __name__ == "__main__":
                            passwd=argv[2], db=argv[3])
     cur = conn.cursor()
     cur.execute("""SELECT * from states WHERE name like 'N%'
-                ORDER BY states.id """)
+                COLLATE latin1_general_cs ORDER BY states.id """)
     query_rows = cur.fetchall()
     for row in query_rows:
         print(row)
