@@ -13,11 +13,11 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
 
     session = Session(engine)
-    for state in session.query(State).order_by(State.id).filter_by(id='1'):
-        if state:
-            print("{}: {}".format(state.id, state.name))
-        else:
-            print("Nothing")
+    state = session.query(State).order_by(State.id).first()
+    if state:
+        print("{}: {}".format(state.id, state.name))
+    else:
+        print("Nothing")
     session.close()
 
 #  could not clear table, so did not test if printing "Nothing" works. Should.
