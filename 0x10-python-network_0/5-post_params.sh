@@ -1,5 +1,3 @@
 #!/bin/bash
-# sends a POST request to the passed URL, and displays the body of the response
-# A variable email must be sent with the value hr@holbertonschool.com
-# A variable subject must be sent with the value I will always be here for PLD
+# sends a POST request to the passed URL, and displays the body of the response. A variable email must be sent with the value hr@holbertonschool.com. A variable subject must be sent with the value I will always be here for PLD
 curl -s -d "email=hr@holbertonschool.com&subject=I will always be here for PLD" -X POST "$1"
