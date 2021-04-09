@@ -5,9 +5,11 @@ import urllib.request
 import urllib.parse
 from sys import argv
 
-url = argv[1]
+if __name__ == '__main__':
 
-with urllib.request.urlopen(url) as response:
-    header = dict(response.info())
-    if 'X-Request-Id' in header:
-        print(header['X-Request-Id'])
+    url = argv[1]
+
+    with urllib.request.urlopen(url) as response:
+        header = dict(response.info())
+        if 'X-Request-Id' in header:
+            print(header['X-Request-Id'])
