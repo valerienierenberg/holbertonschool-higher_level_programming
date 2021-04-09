@@ -8,13 +8,15 @@ import urllib.request
 import urllib.parse
 from sys import argv
 
-url = argv[1]
+if __name__ == '__main__':
 
-req = urllib.request.Request(url)
-try:
-    urllib.request.urlopen(req)
-    with urllib.request.urlopen(req) as response:
-        html = response.read()
-        print(html.decode('utf-8'))
-except urllib.error.URLError as e:
-    print("Error code: {}".format(e.status))
+    url = argv[1]
+
+    req = urllib.request.Request(url)
+    try:
+        urllib.request.urlopen(req)
+        with urllib.request.urlopen(req) as response:
+            html = response.read()
+            print(html.decode('utf-8'))
+    except urllib.error.URLError as e:
+        print("Error code: {}".format(e.status))
