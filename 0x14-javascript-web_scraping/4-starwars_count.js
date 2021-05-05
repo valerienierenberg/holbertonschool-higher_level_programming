@@ -9,7 +9,8 @@ request.get(myurl, function (err, body) {
   if (err) {
     console.log(err);
   } else {
-    console.log(JSON.parse(body));
+    let myresults = console.log(JSON.parse(body).results);
+    // loop through myresults to find characters (a list) -- nested loop
   }
 });
 
