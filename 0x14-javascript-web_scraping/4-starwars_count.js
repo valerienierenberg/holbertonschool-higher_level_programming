@@ -2,7 +2,10 @@
 
 const request = require('request');
 
-request.get('https://swapi-api.hbtn.io/api/people/18/', function (err, response, body) {
+const myargs = process.argv.slice(2);
+const myurl = myargs[0];
+
+request.get(myurl, function (err, body) {
   if (err) {
     console.log(err);
   } else {
