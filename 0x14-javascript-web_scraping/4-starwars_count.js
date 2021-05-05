@@ -1,17 +1,18 @@
 #!/usr/bin/node
-
 const request = require('request');
-
-const myargs = process.argv.slice(2);
-const myurl = myargs[0];
-
-request.get(myurl, function (err, body) {
+const host = process.argv[2];
+request(host, function (err, res, body) {
   if (err) {
-    console.log(err);
-  } else {
-    let myresults = console.log(JSON.parse(body).results);
-    // loop through myresults to find characters (a list) -- nested loop
+    console.error(err);
+    return;
   }
+  let occ = 0;
+  for (const film of JSON.parse(body).results.length) {
+    for (const character of film.characters) {
+      if (parseInt(character.slice(37, 39)) === 18) {
+        occ = occ + 1;
+      }
+    }
+  }
+  console.log(occ);
 });
-
-// .results
