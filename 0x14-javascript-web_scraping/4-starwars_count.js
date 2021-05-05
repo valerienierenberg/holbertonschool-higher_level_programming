@@ -5,12 +5,11 @@ const url = process.argv[2];
 request(url, function (err, body) {
   if (err) {
     console.error(err);
-    return;
   }
   let occ = 0;
   for (const film of JSON.parse(body).results) {
     for (const character of film.characters) {
-      if (parseInt(character.includes('18'))) {
+      if (character.includes('18')) {
         occ = occ + 1;
       }
     }
