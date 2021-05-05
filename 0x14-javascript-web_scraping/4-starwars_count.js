@@ -9,6 +9,8 @@ request.get(myurl, function (err, body) {
   if (err) {
     console.log(err);
   } else {
-    console.log(JSON.parse(body).films.length);
+    console.log(JSON.parse(body));
   }
 });
+
+// .results
