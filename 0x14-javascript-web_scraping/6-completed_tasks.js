@@ -12,5 +12,7 @@ request(url, function (err, res, body) {
       }
     }
     console.log(complete);
+  } else {
+    console.log('An error occured.');
   }
 });
