@@ -9,7 +9,7 @@ request(url, function (err, res, body) {
     console.error(err);
   } else {
     fs.writeFile(filename, body, 'utf8', function (err, res) {
-        if(err) console.log('error', err);
+      if (err) console.log('error', err);
     });
   }
 });
