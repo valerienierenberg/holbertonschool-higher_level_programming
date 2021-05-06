@@ -5,21 +5,21 @@ const url = process.argv[2];
 request(url, function (err, res, body) {
   if (err) {
     console.log(err);
-  } else if (res.StatusCode === 200) {
+  } else {
     const complete = {};
     const tasks = JSON.parse(body);
-    for (const i in tasks) {
-      const task = tasks[i];
-      if (task.completed === true) {
-        if (complete[task.userId] === undefined) {
-          complete[task.userId] = 1;
-        } else {
-          complete[task.userId] += 1;
-        }
+    let i = 0;
+    for (i = 0; i < tasks.length; i++) {
+      if (!(tasks[i].userId in complete)) {
+        complete[tasks[i].userId] = 0;
+      }
+      if (tasks[i].completed) {
+        complete[tasks[i].userId] += 1;
+      }
+      if (complete[tasks[i].userId] === 0) {
+        delete complete[tasks[i].userId];
       }
     }
     console.log(complete);
-  } else {
-    console.log('An error occured.');
   }
 });
