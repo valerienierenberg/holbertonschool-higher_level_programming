@@ -8,6 +8,8 @@ request(url, function (err, res, body) {
   if (err) {
     console.error(err);
   } else {
-    fs.writeFile(filename, body, 'utf8');
+    fs.writeFile(filename, body, 'utf8', function (err, res) {
+        if(err) console.log('error', err);
+    });
   }
 });
